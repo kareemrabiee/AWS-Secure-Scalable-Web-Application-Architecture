@@ -33,9 +33,6 @@ Production-grade AWS 3-Tier Web Application Architecture.
 
 Users
 
-↓
-
-Route53
 
 ↓
 
