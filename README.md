@@ -24,8 +24,6 @@ Production-grade AWS 3-Tier Web Application Architecture.
 - Amazon SNS
 - AWS CloudTrail
 - VPC Flow Logs
-- Route 53
-- AWS Certificate Manager
 
 ---
 
