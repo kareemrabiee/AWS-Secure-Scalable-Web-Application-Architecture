@@ -57,7 +57,6 @@ RDS MySQL Multi-AZ
 - ALB exposed to internet
 - RDS private only
 - Security Group chaining
-- HTTPS using ACM
 - AWS WAF protection
 - Systems Manager instead of SSH
 
