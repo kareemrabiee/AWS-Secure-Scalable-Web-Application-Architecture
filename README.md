@@ -93,7 +93,7 @@ Successfully launched additional EC2 instances under load.
 
 ### WAF
 
-SQL Injection requests blocked successfully.
+XSS requests blocked successfully.
 
 ### SNS
 
