@@ -4,7 +4,7 @@
 
 Reboot with Failover
 
-![AWS RDS failover architecture diagram showing primary and standby database instances with network components and success status](validation tests\RDS Failover - Successfully tested.png)
+![AWS RDS failover architecture diagram showing primary and standby database instances with network components and success status](validation-tests\RDS-Failover---Successfully-tested.png)
 
 Result:
 PASS
