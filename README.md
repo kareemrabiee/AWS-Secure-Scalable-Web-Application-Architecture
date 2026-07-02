@@ -202,6 +202,14 @@ If an entire Availability Zone fails, the ALB health checks stop routing to unhe
 
 Every layer of the architecture was tested under failure conditions before the project was considered complete.
 
+## Live Application Test
+
+The application was successfully deployed behind the Application Load Balancer.
+
+### Home Page
+
+![Production Application](screenshots/production-app.png)
+
 ### RDS Multi-AZ failover
 
 > Triggered via **Reboot with Failover** on the primary RDS instance.
