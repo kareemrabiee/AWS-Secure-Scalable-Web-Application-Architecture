@@ -209,7 +209,7 @@ Every layer of the architecture was tested under failure conditions before the p
 
 The standby in `us-east-1b` was promoted to primary in under 60 seconds. The application's database connection dropped briefly and recovered automatically, with no configuration change required.
 
-![RDS Multi-AZ Failover](validation-tests/rds-failover.png)
+![RDS Multi-AZ Failover](validation-tests/RDS-Failover-Successfully-tested.png)
 
 ---
 
@@ -219,8 +219,6 @@ The standby in `us-east-1b` was promoted to primary in under 60 seconds. The app
 
 The Auto Scaling Group launched additional EC2 instances and registered them with the ALB target group. The ALB began distributing traffic to new instances after they passed the health check.
 
-![Auto Scaling Scale-Out](validation-tests/auto-scaling.png)
-
 ---
 
 ### AWS WAF — SQL injection and XSS blocking
@@ -229,7 +227,7 @@ The Auto Scaling Group launched additional EC2 instances and registered them wit
 
 Both request types were blocked by the AWS Managed Rules common rule set and logged in the WAF metrics. The application returned an HTTP 403 response for each blocked request.
 
-![WAF Blocking](validation-tests/waf-blocking.png)
+![WAF Blocking](validation-tests/WAF-XSS-requests-blocked.png)
 
 ---
 
@@ -239,7 +237,7 @@ Both request types were blocked by the AWS Managed Rules common rule set and log
 
 The SNS topic delivered an email notification within 5 minutes of the alarm entering the ALARM state, and a second notification when it returned to OK.
 
-![SNS Notification](validation-tests/sns-notification.png)
+![SNS Notification](validation-tests/SNS-Email-notifications.png)
 
 ---
 
@@ -249,7 +247,7 @@ The SNS topic delivered an email notification within 5 minutes of the alarm ente
 
 All management events were logged to the dedicated S3 audit bucket with log file validation enabled.
 
-![CloudTrail Auditing](validation-tests/cloudtrail.png)
+![CloudTrail Auditing](validation-tests/CloudTrail-Management-events-logged.png)
 
 ---
 
@@ -259,7 +257,7 @@ All management events were logged to the dedicated S3 audit bucket with log file
 
 Inbound traffic to EC2 through the ALB and outbound traffic through NAT Gateways were both visible in the flow log records.
 
-![VPC Flow Logs](validation-tests/vpc-flow-logs.png)
+![VPC Flow Logs](validation-tests/VPC-Flow-Logs-Traffic-logs-collected.png)
 
 ---
 
