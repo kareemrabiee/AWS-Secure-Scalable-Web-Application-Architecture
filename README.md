@@ -101,7 +101,6 @@ Observability (outside traffic path)
 | Layer | Service | Role |
 |---|---|---|
 | DNS | Amazon Route 53 | Domain routing to ALB |
-| TLS | AWS Certificate Manager | HTTPS certificate at ALB listener |
 | Edge security | AWS WAF | Block OWASP Top 10, SQL injection, XSS |
 | Load balancing | Application Load Balancer | Distribute traffic across both AZs |
 | Compute | Amazon EC2 + Auto Scaling Group | Application tier in private subnets |
@@ -455,7 +454,7 @@ This project provides hands-on evidence for the following SAA-C03 exam domains:
 ## Author
 
 **Kareem Rabea**
-AWS Cloud Engineer | Preparing for AWS Solutions Architect Associate (SAA-C03)
+AWS Cloud Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-kareem--rabiee-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/kareem-rabiee)
 [![GitHub](https://img.shields.io/badge/GitHub-kareemrabiee-181717?style=flat-square&logo=github)](https://github.com/kareemrabiee)
