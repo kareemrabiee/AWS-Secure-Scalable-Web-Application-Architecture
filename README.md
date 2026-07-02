@@ -202,7 +202,7 @@ If an entire Availability Zone fails, the ALB health checks stop routing to unhe
 
 Every layer of the architecture was tested under failure conditions before the project was considered complete.
 
-## Live Application Test
+### Live Application Test
 
 The application was successfully deployed behind the Application Load Balancer.
 
