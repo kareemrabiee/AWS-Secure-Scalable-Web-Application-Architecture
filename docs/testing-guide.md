@@ -4,8 +4,12 @@
 
 Reboot with Failover
 
+![Architecture](validation tests\RDS Failover - Successfully tested..png)
+
 Result:
 PASS
+
+---
 
 ## Test 2 - Auto Scaling
 
