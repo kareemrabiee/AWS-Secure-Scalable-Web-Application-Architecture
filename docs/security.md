@@ -47,15 +47,6 @@ A Regional Web ACL is attached to the Application Load Balancer. The ACL include
 
 WAF operates in **Block** mode after an initial period in **Count** mode to verify no false positives from legitimate traffic. WAF metrics are published to CloudWatch and sampled requests are visible in the WAF console.
 
-### HTTPS enforcement
-
-An ACM certificate is attached to the ALB HTTPS listener (port 443). The HTTP listener (port 80) uses a redirect rule to forward all traffic to HTTPS before it reaches the application. This means plaintext HTTP traffic never reaches the EC2 tier.
-
-The ALB uses the `ELBSecurityPolicy-TLS13-1-2-2021-06` policy, which:
-- Requires TLS 1.2 or 1.3
-- Disables weak cipher suites
-- Enables forward secrecy
-
 ---
 
 ## Instance access
